@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.bg{
+    background-image: url(1.jpg);
+    width:100vw;
+    height:100vh;
+    position:absolute;
+
+}
+
+#dog{
+    height: 400px;
+    width: auto;
+    margin-left:20vw;
+    margin-top:25vh;
+    position:absolute;
+    animation: movedog 0.8s linear infinite;
+}
+
+@keyframes movedog{
+    0%{
+        transform:translateX(-1vw)rotate(5deg);
+    }
+
+    50%{
+    transform:translateX(1vw)rotate(-5deg);
+    }
+
+    100%{
+        transform:translateX(-1vw)rotate(5deg);
+    }
+}
+
+#sax{
+    height: 400px;
+    width: auto;
+    margin-left:40vw;
+    margin-top:20vh;
+    position:absolute;
+    cursor:pointer;
+}
+
+#bob{
+    height: auto;
+    width: 200px;
+    bottom:0;
+    position:absolute;
+    animation: movebob 0.3s 2s ease-out infinite;
+}
+
+@keyframes movebob{
+
+    100%{
+        transform:rotateY(20deg)translateY(2vh);
+    }
+}
+
+#hitler{
+    height: 300px;
+    width: auto;
+    bottom:0;
+    right:0;
+    position:absolute;
+    animation: movehitler 1s 2s ease-out infinite;
+}
+
+@keyframes movehitler{
+
+    25%{
+        transform:translateX(5vw)translateY(1vh);
+    }
+    50%{
+        transform:rotateX(20deg);
+    }
+    75%{
+        transform:rotateX(-20deg);
+    }
+}
+
+#michael{
+    height: 300px;
+    width: auto;
+    right:10vw;
+    position:absolute;
+}
+
+#cloud0{
+    height: auto;
+    width: 400px;
+    position:absolute;
+    cursor:pointer;
+}
+
+#cloud1{
+    height: 400px;
+    width: auto;
+    top:0;
+    right:0;
+    position:absolute;
+    cursor:pointer;
+    display:none;
+}
+
+#cloud2{
+    height: 500px;
+    width: auto;
+    bottom:0;
+    right:0;
+    position:absolute;
+    cursor:pointer;
+    display:none;
+}
+
+#cloud3{
+    height: auto;
+    width: 500px;
+    bottom:0;
+    position:absolute;
+    cursor:pointer;
+    display:none;
+}
+
+#pinkcoud{
+    height: 500px;
+    width: auto;
+    left:40vw;
+    top:12vh;
+    position:absolute;
+    cursor:pointer;
+}
+
+.faded{
+    display:none;
+}
+
+.opacity{
+    animation: fadethefuckout 2s forwards;
+}
+
+@keyframes fadethefuckout{
+    100%{
+        opacity:0;
+    }
+}
+
+.opacity2{
+    animation: fadethefuckout 2s forwards;
+}
+
+@keyframes fadethefuckout{
+    100%{
+        opacity:0;
+    }
+}
